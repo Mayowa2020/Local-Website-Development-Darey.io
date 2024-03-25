@@ -8,7 +8,7 @@
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
-	padding: 0.2;
+	padding: 0.2rem; /* Note: You might want to increase the padding value for better spacing */
 	overflow-x: hidden; /* Hide horizontal overflow */
 	background-color: #828282; /* Main background color */
 	color: #e4e5e6; /* Light grey text color for contrast */
@@ -24,7 +24,7 @@ body {
 header {
 	background-color: #6d6d6d; /* Darker shade of #828282 */
 	color: #fff;
-	padding: 0.1rem 0;
+	padding: 0.1rem 0; /* Adjust padding as needed */
 }
 
 nav ul {
@@ -45,16 +45,15 @@ nav ul li a {
 }
 
 main {
-	padding: 0.5rem;
+	padding: 0.5rem; /* Adjust padding as needed */
 }
 
 footer {
 	background-color: #6d6d6d; /* Same as header */
 	color: #b2aea0;
-	padding: 0.8rem 0;
+	padding: 0.6rem 0; /* Adjust padding as needed */
 	text-align: center;
 }
-
 
 /* Form styles */
 form label,
@@ -101,7 +100,115 @@ form button:hover {
 }
 
 .logo {
-	max-width: 80px; /* Adjust the size of the logo as needed */
+	max-width: 50px; /* Adjust the size of the logo as needed */
+	height: auto; /* This will maintain the aspect ratio of the logo */
+}
+
+h1 {
+	margin: 0; /* This removes the default margin from the h1 element */
+}
+
+/* Global styles */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0.2rem; /* Note: You might want to increase the padding value for better spacing */
+	overflow-x: hidden; /* Hide horizontal overflow */
+	background-color: #828282; /* Main background color */
+	color: #e4e5e6; /* Light grey text color for contrast */
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+header {
+	background-color: #6d6d6d; /* Darker shade of #828282 */
+	color: #fff;
+	padding: 0.1rem 0; /* Adjust padding as needed */
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	background-color: #9e9e9e; /* Lighter shade of #828282 */
+}
+
+nav ul li {
+	margin-right: 1rem;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+main {
+	padding: 1.5rem; /* Adjust padding as needed */
+}
+
+footer {
+	background-color: #6d6d6d; /* Same as header */
+	color: #b2aea0;
+	padding: 0.6rem 0; /* Adjust padding as needed */
+	text-align: center;
+}
+
+/* Form styles */
+form label,
+form input,
+form textarea,
+form button {
+	display: block;
+	width: 100%;
+	margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+	padding: 0.5rem;
+	margin-top: 0.3rem; /* Reduce top margin */
+}
+
+form button {
+	padding: 0.5rem;
+	margin-top: 0.8rem; /* Reduce top margin */
+	background-color: #757575; /* Button color */
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+form button:hover {
+	background-color: #616161; /* Button hover color */
+}
+
+.header {
+	background-image: url("./images/header-background.jpg");
+	background-size: cover; /* or contain, depending on your needs */
+	background-repeat: no-repeat;
+	background-position: center; /* or adjust as needed */
+	max-width: 100%;
+	height: auto; /* Adjust height as needed */
+}
+
+.header-content {
+	display: flex; /* This will enable flexbox */
+	align-items: center; /* This will vertically center the items in the container */
+	justify-content: space-between; /* This will add space between the logo and the header text */
+}
+
+.logo {
+	max-width: 70px; /* Adjust the size of the logo as needed */
 	height: auto; /* This will maintain the aspect ratio of the logo */
 }
 
@@ -110,7 +217,7 @@ h1 {
 }
 
 .home {
-	line-height: 1.62; /* This is a common line-height value for readability */
+	line-height: 1.6; /* This is a common line-height value for readability */
 }
 
 footer img {
@@ -118,11 +225,77 @@ footer img {
 	height: auto; /* This will maintain the aspect ratio of the logo */
 }
 
+.container h2 {
+	padding: 0;
+	margin-top: 0;
+}
+
+#home-h2 {
+	padding: 0.9rem 0;
+}
+
+footer img {
+	max-width: 40px; /* Adjust the size of the logo as needed */
+	height: auto; /* This will maintain the aspect ratio of the logo */
+}
+
+/* Add this CSS code to reduce font size */
+.about-section h2,
+.contact-details h2 {
+	font-size: 1.5rem; /* Adjust the font size as needed */
+}
+
+.about-section,
+.contact-details {
+	padding: 0.5rem; /* Adjust as needed */
+}
+
+.about-section p,
+.contact-details ul {
+	max-width: 100%; /* Ensure text does not exceed container width */
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 1rem; /* Adjust the font size as needed */
+}
+
+/* styles.css */
+
+/* Small header styles */
+.small-header {
+	padding: 0.5rem 0; /* Adjust padding as needed */
+	background-color: #6d6d6d; /* Darker shade of #828282 */
+	color: #fff;
+}
+
+.small-header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.small-header .logo {
+	max-width: 80px;
+	height: auto;
+}
+
+.small-header h1 {
+	font-size: 1.5rem; /* Adjust header font size */
+	margin: 0; /* Remove default margin */
+}
+
 /* Add media query for responsive design */
 @media (max-width: 768px) {
 	.container {
 		width: 100%; /* Adjust container width on smaller screens */
 	}
+	.about-section,
+	.contact-details {
+		padding: 0.5rem; /* Adjust padding for smaller screens */
+	}
+
+	.about-section p,
+	.contact-details ul {
+		font-size: 0.9rem; /* Decrease font size for smaller screens */
+	}
 }
-
-
