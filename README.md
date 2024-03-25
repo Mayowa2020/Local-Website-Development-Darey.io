@@ -38,7 +38,7 @@ We welcome contributions to enhance the CarShopz website! If you have suggestion
 
 ## Credits
 
-- CarShopz Logo: Designed with the hel of [Adobe Express](https://new.express.adobe.com/tools/logo-maker).
+- CarShopz Logo: Designed with the help of [Adobe Express](https://new.express.adobe.com/tools/logo-maker).
 - Background Images: Sourced from [Unsplash](https://unsplash.com).
 
 ## License
